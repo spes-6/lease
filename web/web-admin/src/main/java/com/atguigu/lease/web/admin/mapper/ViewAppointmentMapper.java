@@ -16,6 +16,7 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface ViewAppointmentMapper extends BaseMapper<ViewAppointment> {
 
+    IPage<AppointmentVo> pageAppointment(IPage<AppointmentVo> page, AppointmentQueryVo queryVo);
 }
 
 

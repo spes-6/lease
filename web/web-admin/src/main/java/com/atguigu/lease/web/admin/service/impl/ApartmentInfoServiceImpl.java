@@ -160,7 +160,7 @@ public class ApartmentInfoServiceImpl extends ServiceImpl<ApartmentInfoMapper, A
         List<FeeValueVo> feeValueVoList=feeValueMapper.selectListByApartmentId(id);
 
 
-        //组装结果
+        //组装结果,拼接
         ApartmentDetailVo apartmentDetailVo = new ApartmentDetailVo();
         BeanUtils.copyProperties(apartmentInfo,apartmentDetailVo);
         apartmentDetailVo.setGraphVoList(graphVoList);

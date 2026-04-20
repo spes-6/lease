@@ -16,6 +16,7 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface SystemUserMapper extends BaseMapper<SystemUser> {
 
+    IPage<SystemUserItemVo> pageSystemUser(IPage<SystemUserItemVo> page, SystemUserQueryVo queryVo);
 }
 
 

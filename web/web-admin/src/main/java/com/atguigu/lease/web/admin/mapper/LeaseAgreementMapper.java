@@ -16,6 +16,7 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface LeaseAgreementMapper extends BaseMapper<LeaseAgreement> {
 
+    IPage<AgreementVo> pageAgreementVo(IPage<AgreementVo> page, AgreementQueryVo queryVo);
 }
 
 

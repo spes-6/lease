@@ -17,6 +17,11 @@ spring:
       pool-name: SPHHikariPool # 连接池名称
   jackson:
     time-zone: GMT+8     #设置时区
+  data:                  #redis 配置
+    redis:
+      host: localhost
+      port: 6379
+      database: 0
 #用于打印框架生成的sql语句，便于调试
 mybatis-plus:
   configuration:
@@ -30,4 +35,5 @@ minio:
 #时区
 springdoc:
   default-flat-param-object: true
+
 
